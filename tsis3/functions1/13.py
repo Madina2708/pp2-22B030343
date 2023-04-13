@@ -1,4 +1,8 @@
 import random
+import histo
+
+histo.hist([1,2,3])
+
 def AskForGuess():
     while True:
          guess = input('> ') 
