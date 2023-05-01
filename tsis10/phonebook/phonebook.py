@@ -43,18 +43,6 @@ while True:
     {};
     """.format(mytuple))
 
-while True:
-    print("Want to insert data from csv file? yes or no:")
-    mode=input()
-    if mode=="no":
-        break
-    print("enter the name of the file")
-    mode=input()
-    with open(mode+'.csv', 'r') as f:
-        reader = csv.reader(f)
-        next(reader)
-        for row in reader:
-            cur.execute("INSERT INTO PhoneBook VALUES (%s,%s,%s)",row)
 
 #Обновление данных
 while True:
